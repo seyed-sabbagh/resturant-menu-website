@@ -2,8 +2,7 @@ import NavigationFooter from "@/components/NavigationFooter";
 import Link from "next/link";
 import { FC, MutableRefObject, useRef, useState } from "react";
 import Nav from "./Nav";
-import menuImg from "../../assets/menupage.jpg";
-import logo from "../../assets/sarv_logo.png";
+import menuImg from "../../assets/back.png";
 import Feed from "./Feed";
 
 
