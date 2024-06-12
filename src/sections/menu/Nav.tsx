@@ -34,55 +34,55 @@ const Nav: FC<IProps> = ({
         onClick={() => navigationHandler(pizzaRef)}
         className="font-light text-[#FACE8D] px-4 py-2"
       >
-        pizza
+        پیتزا
       </button>
       <button
         onClick={() => navigationHandler(friedRef)}
         className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
       >
-        fried
+        سوخاری
       </button>
       <button
         onClick={() => navigationHandler(hot_dogRef)}
         className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
       >
-        hot dog
+        هات داگ
       </button>
       <button
         onClick={() => navigationHandler(feedRef)}
         className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
       >
-        feed
+        خوراک
       </button>
       <button
         onClick={() => navigationHandler(burgersRef)}
         className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
       >
-        burgers
+        برگر
       </button>
       <button
         onClick={() => navigationHandler(sandwichesRef)}
         className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
       >
-        sandwiches
+        ساندویچ
       </button>
       <button
         onClick={() => navigationHandler(snacksRef)}
         className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
       >
-        snacks
+        اسنک
       </button>
       <button
         onClick={() => navigationHandler(saladRef)}
         className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
       >
-        salad
+        سالاد
       </button>
       <button
         onClick={() => navigationHandler(persian_foodRef)}
         className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
       >
-        persian_food
+        غذای ایرانی
       </button>
     </div>
   </div>
