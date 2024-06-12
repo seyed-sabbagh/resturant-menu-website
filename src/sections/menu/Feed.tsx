@@ -3,35 +3,50 @@ import menuData from "./menuData";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 
+
 //---------------------------------------------
 interface IProps {
-  startersRef: MutableRefObject<HTMLDivElement | null>;
-  breakfastRef: MutableRefObject<HTMLDivElement | null>;
-  dinnerRef: MutableRefObject<HTMLDivElement | null>;
-  drinksRef: MutableRefObject<HTMLDivElement | null>;
+  pizza: MutableRefObject<HTMLDivElement | null>;
+  fried: MutableRefObject<HTMLDivElement | null>;
+  hot_dog: MutableRefObject<HTMLDivElement | null>;
+  feed: MutableRefObject<HTMLDivElement | null>;
+  burgers: MutableRefObject<HTMLDivElement | null>;
+  sandwiches: MutableRefObject<HTMLDivElement | null>;
+  snacks: MutableRefObject<HTMLDivElement | null>;
+  salad: MutableRefObject<HTMLDivElement | null>;
+  persian_food: MutableRefObject<HTMLDivElement | null>;
+
 }
 //---------------------------------------------
 
 const Feed: FC<IProps> = ({
-  startersRef,
-  breakfastRef,
-  dinnerRef,
-  drinksRef,
+  pizza,
+  fried,
+  hot_dog,
+  feed,
+  burgers,
+  sandwiches,
+  snacks,
+  salad,
+  persian_food
 }) => {
   return (
-    <div className="mt-[80px] max-w-[628px] w-full overflow-hidden overflow-y-scroll" style={{ direction: 'rtl', fontFamily: 'Arial, sans-serif' }}>
-      <div ref={startersRef} className="w-full px-[10px]">
+
+    <div className="container mt-[80px] max-w-[628px] w-full overflow-hidden overflow-y-scroll" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif', textAlign: 'right' }}>
+      <div ref={pizza} className="w-full px-[10px]">
         <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
-          pizza
+        pizza
         </h1>
-        {menuData.starters.map((item) => (
+        <div className="item-container">
+        {menuData.pizza.map((item) => (
           <div
             style={{
               border: item.id === 3 ? `1px solid #FACE8D` : "1px solid black",
               borderRadius: 10,
             }}
             key={item.id}
-            className="flex w-full mt-[16px] cursor-pointer hover:scale-95 duration-150"
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
           >
             <Image
               width={90}
@@ -51,102 +66,270 @@ const Feed: FC<IProps> = ({
             </div>
           </div>
         ))}
-      </div>
-      <div ref={breakfastRef} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
-          Breakfast
-        </h1>
-        {menuData.breakfast.map((item) => (
-          <div
-            style={{
-              border:
-                item.id === 2 ? `1px solid #FACE8D` : "1px solid transparent",
-              borderRadius: 10,
-            }}
-            key={item.id}
-            className="flex w-full mt-[12px] cursor-pointer hover:scale-95 duration-150"
-          >
-            <Image
-              width={90}
-              height={72}
-              src={item.pictureUrl}
-              alt={item.name}
-              className="rounded-[10px]"
-            />
-            <div className="ml-[24px]">
-              <div className="flex items-center justify-between">
-                <h1 className="text-[20px]">{item.name}</h1>
-                <p className="text-white text-opacity-90">{item.price}</p>
-              </div>
-              <p className="text-[16px] text-white text-opacity-50">
-                {item.description}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div ref={dinnerRef} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
-          Dinner
-        </h1>
-        {menuData.dinner.map((item) => (
-          <div
-            style={{
-              border:
-                item.id === 4 ? `1px solid #FACE8D` : "1px solid transparent",
-              borderRadius: 10,
-            }}
-            key={item.id}
-            className="flex w-full mt-[12px] cursor-pointer hover:scale-95 duration-150"
-          >
-            <Image
-              width={90}
-              height={72}
-              src={item.pictureUrl}
-              alt={item.name}
-              className="rounded-[10px]"
-            />
-            <div className="ml-[24px]">
-              <div className="flex items-center justify-between">
-                <h1 className="text-[20px]">{item.name}</h1>
-                <p className="text-white text-opacity-90">{item.price}</p>
-              </div>
-              <p className="text-[16px] text-white text-opacity-50">
-                {item.description}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div ref={drinksRef} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
-          Drinks
-        </h1>
-        {menuData.drinks.map((item) => (
-          <div
-            key={item.id}
-            className="flex w-full mt-[12px] cursor-pointer hover:scale-95 duration-150"
-          >
-            <Image
-              width={90}
-              height={72}
-              src={item.pictureUrl}
-              alt={item.name}
-              className="rounded-[10px]"
-            />
-            <div className="ml-[24px]">
-              <div className="flex items-center justify-between">
-                <h1 className="text-[20px]">{item.name}</h1>
-                <p className="text-white text-opacity-90">{item.price}</p>
-              </div>
-              <p className="text-[16px] text-white text-opacity-50">
-                {item.description}
-              </p>
-            </div>
-          </div>
-        ))}
+        </div>
       </div>
 
+      <div ref={fried} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        fried
+        </h1>
+        <div className="item-container">
+        {menuData.fried.map((item) => (
+          <div
+            style={{
+              border: item.id === 2 ? `1px solid #FACE8D` : "1px solid transparent",
+              borderRadius: 10,
+            }}
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{item.price}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+
+      <div ref={hot_dog} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        hot dog
+        </h1>
+        <div className="item-container">
+        {menuData.hot_dog.map((item) => (
+          <div
+            style={{
+              border: item.id === 4 ? `1px solid #FACE8D` : "1px solid transparent",
+              borderRadius: 10,
+            }}
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
+
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{item.price}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+
+      <div ref={feed} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        feed
+        </h1>
+        <div className="item-container">
+        {menuData.feed.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{item.price}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+
+      <div ref={burgers} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        burgers
+        </h1>
+        <div className="item-container">
+        {menuData.burgers.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{item.price}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+
+      <div ref={sandwiches} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        sandwiches
+        </h1>
+        <div className="item-container">
+        {menuData.sandwiches.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{item.price}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+  
+      <div ref={snacks} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        snacks
+        </h1>
+        <div className="item-container">
+        {menuData.snacks.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{item.price}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+
+      <div ref={salad} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        salad
+        </h1>
+        {menuData.salad.map((item) => (
+          <div
+            key={item.id}
+            className="flex w-full mt-[12px] cursor-pointer hover:scale-95 duration-150"
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{item.price}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+  
+      <div ref={persian_food} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        persian_food
+        </h1>
+
+        <div className="item-container">
+
+        
+        {menuData.persian_food.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{item.price}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+  
       <Footer />
     </div>
   );
