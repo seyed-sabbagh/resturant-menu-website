@@ -19,10 +19,10 @@ const Feed: FC<IProps> = ({
   drinksRef,
 }) => {
   return (
-    <div className="mt-[80px] max-w-[628px] w-full overflow-hidden overflow-y-scroll">
+    <div className="mt-[80px] max-w-[628px] w-full overflow-hidden overflow-y-scroll" style={{ direction: 'rtl', fontFamily: 'Arial, sans-serif' }}>
       <div ref={startersRef} className="w-full px-[10px]">
         <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
-          Starters
+          pizza
         </h1>
         {menuData.starters.map((item) => (
           <div

@@ -1,4 +1,4 @@
-// File: /Users/seyed/resturant-website/src/app/layout.tsx
+// File: /Users/fapna/resturant-menu-website/src/app/layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
