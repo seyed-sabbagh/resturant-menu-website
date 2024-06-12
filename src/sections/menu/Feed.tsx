@@ -46,8 +46,8 @@ const Feed: FC<IProps> = ({
   };
   return (
 
-    <div className=" container mt-[80px] max-w-[628px] w-full overflow-hidden overflow-y-scroll farsi-font"> {/* Apply farsi-font class */}
-      <div ref={pizza} className="w-full px-[10px]">
+    <div className="mt-[80px] max-w-[628px] w-full overflow-hidden overflow-y-scroll farsi-font"> {/* Apply farsi-font class */}
+      <div ref={pizza} className="w-full px-[10px] mt-[96px]">
         <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
         pizza
         </h1>
