@@ -29,7 +29,7 @@ const Footer = () => {
             شماره تلفن
           </h2>
           <p className="mt-2 text-gray-400">
-            +98 936 001 1103
+            1103 001 036 98+
           </p>
         </div>
       </div>
