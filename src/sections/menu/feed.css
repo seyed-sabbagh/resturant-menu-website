@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'B Vazir'; /* Define the font family */
+    src: url('/fonts/Vazir.ttf'); /* Specify the path to your Farsi font file */
+    /* Add additional font formats (e.g., woff, woff2) for better browser compatibility */
+  }
+  
+  .farsi-font {
+    font-family: 'B Vazir', Tahoma, Arial, sans-serif; /* Apply the Farsi font */
+    direction: rtl; /* Set text direction to right-to-left for Farsi language */
+    /* Add additional styles as needed */
+  }
+  
+  .farsi-numerals {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    font-family: Arial, sans-serif; /* Use a font that supports Farsi numerical digits */
+  }

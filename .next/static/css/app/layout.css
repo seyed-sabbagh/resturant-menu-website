@@ -527,6 +527,9 @@ video {
 .fixed {
   position: fixed;
 }
+.absolute {
+  position: absolute;
+}
 .relative {
   position: relative;
 }
@@ -551,9 +554,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-.mb-4 {
-  margin-bottom: 1rem;
 }
 .mb-\[32px\] {
   margin-bottom: 32px;
@@ -611,9 +611,6 @@ video {
 }
 .table {
   display: table;
-}
-.h-16 {
-  height: 4rem;
 }
 .h-\[220px\] {
   height: 220px;
@@ -674,9 +671,6 @@ video {
 }
 .min-h-screen {
   min-height: 100vh;
-}
-.w-16 {
-  width: 4rem;
 }
 .w-\[144px\] {
   width: 144px;

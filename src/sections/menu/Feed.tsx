@@ -3,6 +3,7 @@ import menuData from "./menuData";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 
+import "./feed.css";
 
 //---------------------------------------------
 interface IProps {
@@ -30,9 +31,22 @@ const Feed: FC<IProps> = ({
   salad,
   persian_food
 }) => {
+
+  const formatPrice = (price: number): string => {
+    // Check if the price is negative
+    if (price < 0) {
+      // Use the absolute value of the price for formatting
+      const formattedPrice = Math.abs(price).toLocaleString("fa", { useGrouping: true });
+      // Return the formatted price with a minus sign
+      return '-' + formattedPrice;
+    } else {
+      // Use the regular formatting for positive numbers
+      return price.toLocaleString("fa", { useGrouping: true });
+    }
+  };
   return (
 
-    <div className="container mt-[80px] max-w-[628px] w-full overflow-hidden overflow-y-scroll" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif', textAlign: 'right' }}>
+    <div className=" container mt-[80px] max-w-[628px] w-full overflow-hidden overflow-y-scroll farsi-font"> {/* Apply farsi-font class */}
       <div ref={pizza} className="w-full px-[10px]">
         <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
         pizza
@@ -58,7 +72,7 @@ const Feed: FC<IProps> = ({
             <div className="w-full ml-[24px] pr-[20px]">
               <div className="w-full flex items-center justify-between">
                 <h1 className="text-[20px]">{item.name}</h1>
-                <p className="text-white text-opacity-90">{item.price}</p>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
               </div>
               <p className="text-[16px] text-white text-opacity-50">
                 {item.description}
@@ -94,7 +108,7 @@ const Feed: FC<IProps> = ({
             <div className="ml-[24px]">
               <div className="flex items-center justify-between">
                 <h1 className="text-[20px]">{item.name}</h1>
-                <p className="text-white text-opacity-90">{item.price}</p>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
               </div>
               <p className="text-[16px] text-white text-opacity-50">
                 {item.description}
@@ -131,7 +145,7 @@ const Feed: FC<IProps> = ({
             <div className="ml-[24px]">
               <div className="flex items-center justify-between">
                 <h1 className="text-[20px]">{item.name}</h1>
-                <p className="text-white text-opacity-90">{item.price}</p>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
               </div>
               <p className="text-[16px] text-white text-opacity-50">
                 {item.description}
@@ -162,7 +176,7 @@ const Feed: FC<IProps> = ({
             <div className="ml-[24px]">
               <div className="flex items-center justify-between">
                 <h1 className="text-[20px]">{item.name}</h1>
-                <p className="text-white text-opacity-90">{item.price}</p>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
               </div>
               <p className="text-[16px] text-white text-opacity-50">
                 {item.description}
@@ -193,7 +207,7 @@ const Feed: FC<IProps> = ({
             <div className="ml-[24px]">
               <div className="flex items-center justify-between">
                 <h1 className="text-[20px]">{item.name}</h1>
-                <p className="text-white text-opacity-90">{item.price}</p>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
               </div>
               <p className="text-[16px] text-white text-opacity-50">
                 {item.description}
@@ -224,7 +238,7 @@ const Feed: FC<IProps> = ({
             <div className="ml-[24px]">
               <div className="flex items-center justify-between">
                 <h1 className="text-[20px]">{item.name}</h1>
-                <p className="text-white text-opacity-90">{item.price}</p>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
               </div>
               <p className="text-[16px] text-white text-opacity-50">
                 {item.description}
@@ -255,7 +269,7 @@ const Feed: FC<IProps> = ({
             <div className="ml-[24px]">
               <div className="flex items-center justify-between">
                 <h1 className="text-[20px]">{item.name}</h1>
-                <p className="text-white text-opacity-90">{item.price}</p>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
               </div>
               <p className="text-[16px] text-white text-opacity-50">
                 {item.description}
@@ -270,10 +284,11 @@ const Feed: FC<IProps> = ({
         <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
         salad
         </h1>
+        <div className="item-container">
         {menuData.salad.map((item) => (
           <div
             key={item.id}
-            className="flex w-full mt-[12px] cursor-pointer hover:scale-95 duration-150"
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
           >
             <Image
               width={90}
@@ -285,7 +300,7 @@ const Feed: FC<IProps> = ({
             <div className="ml-[24px]">
               <div className="flex items-center justify-between">
                 <h1 className="text-[20px]">{item.name}</h1>
-                <p className="text-white text-opacity-90">{item.price}</p>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
               </div>
               <p className="text-[16px] text-white text-opacity-50">
                 {item.description}
@@ -293,6 +308,7 @@ const Feed: FC<IProps> = ({
             </div>
           </div>
         ))}
+        </div>
       </div>
   
       <div ref={persian_food} className="w-full px-[10px] mt-[96px]">
@@ -319,7 +335,7 @@ const Feed: FC<IProps> = ({
             <div className="ml-[24px]">
               <div className="flex items-center justify-between">
                 <h1 className="text-[20px]">{item.name}</h1>
-                <p className="text-white text-opacity-90">{item.price}</p>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
               </div>
               <p className="text-[16px] text-white text-opacity-50">
                 {item.description}
