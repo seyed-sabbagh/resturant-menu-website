@@ -2,7 +2,7 @@ import NavigationFooter from "@/components/NavigationFooter";
 import Link from "next/link";
 import { FC, MutableRefObject, useRef, useState } from "react";
 import Nav from "./Nav";
-import menuImg from "../../assets/back.webp";
+import menuImg from "../../../src/app/back.webp";
 import Feed from "./Feed";
 
 
