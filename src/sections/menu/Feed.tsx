@@ -1,5 +1,5 @@
 import React, { FC, MutableRefObject } from "react";
-import menuData from "./menuData";
+import menuData from "/root/menu-manager-2/src/data/menuData";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 
