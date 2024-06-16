@@ -16,6 +16,15 @@ const MenuSection: FC = () => {
   const saladRef = useRef<HTMLDivElement | null>(null);
   const persian_foodRef = useRef<HTMLDivElement | null>(null);
 
+
+  const pish_ghazaRef = useRef<HTMLDivElement | null>(null);
+  const seafoodRef = useRef<HTMLDivElement | null>(null);
+  const CustomـfoodRef = useRef<HTMLDivElement | null>(null);
+  const LunchـdinnerRef = useRef<HTMLDivElement | null>(null);
+  const sini_majlesiRef = useRef<HTMLDivElement | null>(null);
+  const day_foodRef = useRef<HTMLDivElement | null>(null);
+
+
   function scrollToSection(sectionId: MutableRefObject<HTMLDivElement | null>) {
     if (sectionId?.current) {
       sectionId?.current?.scrollIntoView({
@@ -57,7 +66,18 @@ const MenuSection: FC = () => {
           snacksRef={snacksRef}
           saladRef={saladRef}
           persian_foodRef={persian_foodRef}
+
+          pish_ghazaRef = {pish_ghazaRef}
+          seafoodRef = {seafoodRef}
+          CustomـfoodRef = {CustomـfoodRef}
+          LunchـdinnerRef = {LunchـdinnerRef}
+          sini_majlesiRef = {sini_majlesiRef}
+          day_foodRef= {day_foodRef}
+
+
+
           navigationHandler={scrollToSection}
+
         />
         <Feed
           pizza={pizzaRef}
@@ -69,6 +89,15 @@ const MenuSection: FC = () => {
           snacks={snacksRef}
           salad={saladRef}
           persian_food={persian_foodRef}
+          pish_ghaza = {pish_ghazaRef}
+          seafood = {seafoodRef}
+          Customـfood = {CustomـfoodRef}
+          Lunchـdinner = {LunchـdinnerRef}
+          sini_majlesi = {sini_majlesiRef}
+          day_food= {day_foodRef}
+
+
+
         />
       </div>
     </section>

@@ -11,6 +11,18 @@ interface IProps {
   snacksRef: MutableRefObject<HTMLDivElement | null>;
   saladRef: MutableRefObject<HTMLDivElement | null>;
   persian_foodRef: MutableRefObject<HTMLDivElement | null>;
+
+
+  pish_ghazaRef: MutableRefObject<HTMLDivElement | null>;
+  seafoodRef: MutableRefObject<HTMLDivElement | null>;
+  CustomـfoodRef: MutableRefObject<HTMLDivElement | null>;
+  LunchـdinnerRef: MutableRefObject<HTMLDivElement | null>;
+  sini_majlesiRef: MutableRefObject<HTMLDivElement | null>;
+  day_foodRef: MutableRefObject<HTMLDivElement | null>;
+
+
+
+
   navigationHandler: (ref: MutableRefObject<HTMLDivElement | null>) => void;
 }
 //-------------------------------------------------------
@@ -25,7 +37,16 @@ const Nav: FC<IProps> = ({
   sandwichesRef,
   snacksRef,
   saladRef,
-  persian_foodRef
+  persian_foodRef,
+  pish_ghazaRef,
+  seafoodRef,
+  CustomـfoodRef,
+  LunchـdinnerRef,
+  sini_majlesiRef,
+  day_foodRef
+
+  
+
 }) => {
   return (
     <div className="min-h-[74px] w-full flex justify-center items-center overflow-x-auto px-4">
@@ -84,6 +105,42 @@ const Nav: FC<IProps> = ({
         >
           غذای ایرانی
         </button>
+
+
+        <button
+          onClick={() => navigationHandler(pish_ghazaRef)}
+          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
+        >
+          پیش غذا
+        </button>
+
+
+
+        <button
+          onClick={() => navigationHandler(CustomـfoodRef)}
+          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
+        >
+          غذای سفارشی
+        </button>
+
+
+        <button
+          onClick={() => navigationHandler(seafoodRef)}
+          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
+        >
+          غذای دریایی
+        </button>
+
+
+        <button
+          onClick={() => navigationHandler(pish_ghazaRef)}
+          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
+        >
+          پیش غذا
+        </button>
+
+
+
       </div>
     </div>
   );
