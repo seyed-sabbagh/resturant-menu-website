@@ -48,7 +48,7 @@ const Feed: FC<IProps> = ({
 
     <div className="mt-[80px] max-w-[628px] w-full overflow-hidden overflow-y-scroll farsi-font"> {/* Apply farsi-font class */}
       <div ref={pizza} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="pizza">
         pizza
         </h1>
         <div className="item-container">
@@ -84,7 +84,7 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={fried} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="fried">
         fried
         </h1>
         <div className="item-container">
@@ -120,7 +120,7 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={hot_dog} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="hot_dog">
         hot dog
         </h1>
         <div className="item-container">
@@ -157,7 +157,7 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={feed} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="feed">
         feed
         </h1>
         <div className="item-container">
@@ -188,7 +188,7 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={burgers} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="burgers">
         burgers
         </h1>
         <div className="item-container">
@@ -219,7 +219,7 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={sandwiches} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sandwiches">
         sandwiches
         </h1>
         <div className="item-container">
@@ -250,7 +250,7 @@ const Feed: FC<IProps> = ({
       </div>
   
       <div ref={snacks} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="snacks">
         snacks
         </h1>
         <div className="item-container">
@@ -281,7 +281,7 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={salad} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="salad">
         salad
         </h1>
         <div className="item-container">
@@ -312,7 +312,7 @@ const Feed: FC<IProps> = ({
       </div>
   
       <div ref={persian_food} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="persian_food">
         persian_food
         </h1>
 
