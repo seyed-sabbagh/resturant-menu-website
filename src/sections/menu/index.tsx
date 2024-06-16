@@ -24,6 +24,19 @@ const MenuSection: FC = () => {
   const sini_majlesiRef = useRef<HTMLDivElement | null>(null);
   const day_foodRef = useRef<HTMLDivElement | null>(null);
 
+  const cofeeRef = useRef<HTMLDivElement | null>(null);
+  const icecreamRef = useRef<HTMLDivElement | null>(null);
+  const koktelRef = useRef<HTMLDivElement | null>(null);
+  const damnoshRef = useRef<HTMLDivElement | null>(null);
+  const shakeRef = useRef<HTMLDivElement | null>(null);
+  const smothiRef = useRef<HTMLDivElement | null>(null);
+  const majonRef = useRef<HTMLDivElement | null>(null);
+  const cakeRef = useRef<HTMLDivElement | null>(null);
+  const cold_barRef = useRef<HTMLDivElement | null>(null);
+  const glasseRef = useRef<HTMLDivElement | null>(null);
+  const hot_barRef = useRef<HTMLDivElement | null>(null);
+
+
 
   function scrollToSection(sectionId: MutableRefObject<HTMLDivElement | null>) {
     if (sectionId?.current) {
@@ -73,6 +86,20 @@ const MenuSection: FC = () => {
           LunchـdinnerRef = {LunchـdinnerRef}
           sini_majlesiRef = {sini_majlesiRef}
           day_foodRef= {day_foodRef}
+
+          // cofee
+          cofeeRef = {cofeeRef}
+          icecreamRef = {icecreamRef}
+          koktelRef = {koktelRef}
+          damnoshRef = {damnoshRef}
+          shakeRef = {shakeRef}
+          smothiRef = {smothiRef}
+          majonRef = {majonRef}
+          cakeRef = {cakeRef}
+          cold_barRef = {cold_barRef}
+          glasseRef = {glasseRef}
+          hot_barRef = {hot_barRef}
+
 
 
 

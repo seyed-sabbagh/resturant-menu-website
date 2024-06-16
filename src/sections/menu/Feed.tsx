@@ -22,6 +22,20 @@ interface IProps {
   Lunchـdinner: MutableRefObject<HTMLDivElement | null>;
   sini_majlesi: MutableRefObject<HTMLDivElement | null>;
   day_food: MutableRefObject<HTMLDivElement | null>;
+
+
+  //cofee
+  cofee: MutableRefObject<HTMLDivElement | null>;
+  icecream: MutableRefObject<HTMLDivElement | null>;
+  koktel: MutableRefObject<HTMLDivElement | null>;
+  damnosh: MutableRefObject<HTMLDivElement | null>;
+  shake: MutableRefObject<HTMLDivElement | null>;
+  smothi: MutableRefObject<HTMLDivElement | null>;
+  majon: MutableRefObject<HTMLDivElement | null>;
+  cold_bar: MutableRefObject<HTMLDivElement | null>;
+  glasse: MutableRefObject<HTMLDivElement | null>;
+  hot_bar: MutableRefObject<HTMLDivElement | null>;
+
 }
 //---------------------------------------------
 
@@ -40,7 +54,20 @@ const Feed: FC<IProps> = ({
   Customـfood,
   Lunchـdinner,
   sini_majlesi,
-  day_food
+  day_food,
+
+  //cofee 
+
+  cofee,
+  icecream,
+  koktel,
+  damnosh,
+  shake,
+  smothi,
+  majon,
+  cold_bar,
+  glasse,
+  hot_bar
 }) => {
 
   const formatPrice = (price: number): string => {
@@ -571,7 +598,372 @@ const Feed: FC<IProps> = ({
         ))}
         </div>
       </div>
+
+
+      <div ref={cofee} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        قهوه
+        </h1>
+
+        <div className="item-container">
+
+        
+        {menuData.cofee.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
   
+
+
+      <div ref={icecream} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        بستنی
+        </h1>
+
+        <div className="item-container">
+
+        
+        {menuData.icecream.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+  
+
+
+      <div ref={koktel} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        ککتل
+        </h1>
+
+        <div className="item-container">
+
+        
+        {menuData.koktel.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+  
+
+
+      <div ref={damnosh} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        دمنوش
+        </h1>
+
+        <div className="item-container">
+
+        
+        {menuData.damnosh.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+  
+
+      <div ref={shake} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        شیک
+        </h1>
+
+        <div className="item-container">
+
+        
+        {menuData.shake.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+
+
+
+      <div ref={smothi} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        اسموتی
+        </h1>
+
+        <div className="item-container">
+
+        
+        {menuData.smothi.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+
+  
+
+      <div ref={majon} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        معجون
+        </h1>
+
+        <div className="item-container">
+
+        
+        {menuData.majon.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+
+
+      <div ref={cold_bar} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        بار سرد
+        </h1>
+
+        <div className="item-container">
+
+        
+        {menuData.cold_bar.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+
+
+      <div ref={glasse} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        گلاسه
+        </h1>
+
+        <div className="item-container">
+
+        
+        {menuData.glasse.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+
+
+      <div ref={hot_bar} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        بار گرم
+        </h1>
+
+        <div className="item-container">
+
+        
+        {menuData.hot_bar.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
