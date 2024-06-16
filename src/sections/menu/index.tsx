@@ -5,8 +5,6 @@ import Nav from "./Nav";
 import menuImg from "../../../src/app/back.webp";
 import Feed from "./Feed";
 
-
-
 const MenuSection: FC = () => {
   const pizzaRef = useRef<HTMLDivElement | null>(null);
   const friedRef = useRef<HTMLDivElement | null>(null);
@@ -29,54 +27,51 @@ const MenuSection: FC = () => {
 
   return (
     <section className="w-full flex flex-col lg:flex-row h-full min-h-screen">
-  <div
-    style={{
-      background: `url(${menuImg.src})`,
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-    }}
-    className="w-full lg:w-[50%] p-12 flex flex-col justify-between items-center min-h-[80vh] md:min-h-screen h-full">
-    <img src={`url(${menuImg.src})`}/>
+      <div
+        style={{
+          background: `url(${menuImg.src})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+        className="w-full lg:w-[50%] p-12 flex flex-col justify-between items-center min-h-[80vh] md:min-h-screen h-full"
+      >
+        {/* <div className="text-center">
+          <h2 className="text-[#FACE8D] font-dancing text-[50px] md:text-[80px] leading-none">
+            Check Out
+          </h2>
+          <h1 className="font-medium text-[50px] md:text-[80px] leading-none">
+            Our Menus
+          </h1>
+        </div> */}
+      </div>
 
-    <div className="text-center">
-    
-      <h2 className="text-[#FACE8D] font-dancing text-[50px] md:text-[80px] leading-none">
-        Check Out
-      </h2>
-      <h1 className="font-medium text-[50px] md:text-[80px] leading-none">
-        Our Menus
-      </h1>
-    </div>
-  </div>
-
-  <div className="w-full lg:w-[50%] flex flex-col items-center h-screen">
-    <Nav
-      pizzaRef={pizzaRef}
-      friedRef={friedRef}
-      hot_dogRef={hot_dogRef}
-      feedRef={feedRef}
-      burgersRef={burgersRef}
-      sandwichesRef={sandwichesRef}
-      snacksRef={snacksRef}
-      saladRef={saladRef}
-      persian_foodRef={persian_foodRef}
-      navigationHandler={scrollToSection}
-    />
-    <Feed
-      pizza={pizzaRef}
-      fried={friedRef}
-      hot_dog={hot_dogRef}
-      feed={feedRef}
-      burgers={burgersRef}
-      sandwiches={sandwichesRef}
-      snacks={snacksRef}
-      salad={saladRef}
-      persian_food={persian_foodRef}
-    />
-  </div>
-</section>
-
+      <div className="w-full lg:w-[50%] flex flex-col items-center h-screen">
+        <Nav
+          pizzaRef={pizzaRef}
+          friedRef={friedRef}
+          hot_dogRef={hot_dogRef}
+          feedRef={feedRef}
+          burgersRef={burgersRef}
+          sandwichesRef={sandwichesRef}
+          snacksRef={snacksRef}
+          saladRef={saladRef}
+          persian_foodRef={persian_foodRef}
+          navigationHandler={scrollToSection}
+        />
+        <Feed
+          pizza={pizzaRef}
+          fried={friedRef}
+          hot_dog={hot_dogRef}
+          feed={feedRef}
+          burgers={burgersRef}
+          sandwiches={sandwichesRef}
+          snacks={snacksRef}
+          salad={saladRef}
+          persian_food={persian_foodRef}
+        />
+      </div>
+    </section>
   );
 };
 
