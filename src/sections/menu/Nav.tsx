@@ -19,6 +19,7 @@ interface IProps {
   LunchـdinnerRef: MutableRefObject<HTMLDivElement | null>;
   sini_majlesiRef: MutableRefObject<HTMLDivElement | null>;
   day_foodRef: MutableRefObject<HTMLDivElement | null>;
+  cofee: MutableRefObject<HTMLDivElement | null>;
 
 
 
@@ -43,7 +44,8 @@ const Nav: FC<IProps> = ({
   CustomـfoodRef,
   LunchـdinnerRef,
   sini_majlesiRef,
-  day_foodRef
+  day_foodRef,
+  cofee
 
   
 
@@ -139,6 +141,38 @@ const Nav: FC<IProps> = ({
           پیش غذا
         </button>
 
+
+        <button
+          onClick={() => navigationHandler(LunchـdinnerRef)}
+          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
+        >
+          ناهار و شام
+        </button>
+
+
+        <button
+          onClick={() => navigationHandler(sini_majlesiRef)}
+          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
+        >
+          سینی مجلسی
+        </button>
+
+
+        <button
+          onClick={() => navigationHandler(day_foodRef)}
+          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
+        >
+          غذای روز
+        </button>
+
+
+
+        <button
+          onClick={() => navigationHandler(cofee)}
+          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
+        >
+          کافه
+        </button>
 
 
       </div>

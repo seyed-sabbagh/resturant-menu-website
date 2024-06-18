@@ -35,6 +35,7 @@ interface IProps {
   cold_bar: MutableRefObject<HTMLDivElement | null>;
   glasse: MutableRefObject<HTMLDivElement | null>;
   hot_bar: MutableRefObject<HTMLDivElement | null>;
+  cake: MutableRefObject<HTMLDivElement | null>;
 
 }
 //---------------------------------------------
@@ -67,7 +68,8 @@ const Feed: FC<IProps> = ({
   majon,
   cold_bar,
   glasse,
-  hot_bar
+  hot_bar,
+  cake
 }) => {
 
   const formatPrice = (price: number): string => {
@@ -938,6 +940,42 @@ const Feed: FC<IProps> = ({
 
         
         {menuData.hot_bar.map((item) => (
+          <div
+            key={item.id}
+            className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
+
+          >
+            <Image
+              width={90}
+              height={72}
+              src={item.pictureUrl}
+              alt={item.name}
+              className="rounded-[10px]"
+            />
+            <div className="ml-[24px]">
+              <div className="flex items-center justify-between">
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="text-white text-opacity-90">{formatPrice(Number(item.price))}</p>
+              </div>
+              <p className="text-[16px] text-white text-opacity-50">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+
+
+      <div ref={cake} className="w-full px-[10px] mt-[96px]">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        کیک
+        </h1>
+
+        <div className="item-container">
+
+        
+        {menuData.cake.map((item) => (
           <div
             key={item.id}
             className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"

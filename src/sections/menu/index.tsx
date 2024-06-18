@@ -38,6 +38,9 @@ const MenuSection: FC = () => {
 
 
 
+
+
+
   function scrollToSection(sectionId: MutableRefObject<HTMLDivElement | null>) {
     if (sectionId?.current) {
       sectionId?.current?.scrollIntoView({
@@ -99,6 +102,7 @@ const MenuSection: FC = () => {
           cold_barRef = {cold_barRef}
           glasseRef = {glasseRef}
           hot_barRef = {hot_barRef}
+          
 
 
 
@@ -122,7 +126,9 @@ const MenuSection: FC = () => {
           Lunchـdinner = {LunchـdinnerRef}
           sini_majlesi = {sini_majlesiRef}
           day_food= {day_foodRef}
-
+          cake = {cakeRef}
+          cofee ={cofeeRef}
+          
 
 
         />
