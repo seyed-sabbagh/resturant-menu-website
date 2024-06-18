@@ -603,7 +603,7 @@ const Feed: FC<IProps> = ({
 
 
       <div ref={cofee} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="cofee">
         قهوه
         </h1>
 

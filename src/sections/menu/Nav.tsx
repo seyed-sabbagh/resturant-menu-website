@@ -19,7 +19,7 @@ interface IProps {
   LunchـdinnerRef: MutableRefObject<HTMLDivElement | null>;
   sini_majlesiRef: MutableRefObject<HTMLDivElement | null>;
   day_foodRef: MutableRefObject<HTMLDivElement | null>;
-  cofee: MutableRefObject<HTMLDivElement | null>;
+  cofeeRef: MutableRefObject<HTMLDivElement | null>;
 
 
 
@@ -45,7 +45,7 @@ const Nav: FC<IProps> = ({
   LunchـdinnerRef,
   sini_majlesiRef,
   day_foodRef,
-  cofee
+  cofeeRef
 
   
 
@@ -57,123 +57,22 @@ const Nav: FC<IProps> = ({
           onClick={() => navigationHandler(pizzaRef)}
           className="font-light text-[#FACE8D] px-4 py-2"
         >
-          پیتزا
+          فست فود
         </button>
-        <button
-          onClick={() => navigationHandler(friedRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
-        >
-          سوخاری
-        </button>
-        <button
-          onClick={() => navigationHandler(hot_dogRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
-        >
-          هات داگ
-        </button>
-        <button
-          onClick={() => navigationHandler(feedRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
-        >
-          خوراک
-        </button>
-        <button
-          onClick={() => navigationHandler(burgersRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
-        >
-          برگر
-        </button>
-        <button
-          onClick={() => navigationHandler(sandwichesRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
-        >
-          ساندویچ
-        </button>
-        <button
-          onClick={() => navigationHandler(snacksRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
-        >
-          اسنک
-        </button>
-        <button
-          onClick={() => navigationHandler(saladRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
-        >
-          سالاد
-        </button>
+
         <button
           onClick={() => navigationHandler(persian_foodRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
+          className="font-light text-[#FACE8D] px-4 py-2"
         >
-          غذای ایرانی
+          رستوران
         </button>
 
-
         <button
-          onClick={() => navigationHandler(pish_ghazaRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
-        >
-          پیش غذا
-        </button>
-
-
-
-        <button
-          onClick={() => navigationHandler(CustomـfoodRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
-        >
-          غذای سفارشی
-        </button>
-
-
-        <button
-          onClick={() => navigationHandler(seafoodRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
-        >
-          غذای دریایی
-        </button>
-
-
-        <button
-          onClick={() => navigationHandler(pish_ghazaRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
-        >
-          پیش غذا
-        </button>
-
-
-        <button
-          onClick={() => navigationHandler(LunchـdinnerRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
-        >
-          ناهار و شام
-        </button>
-
-
-        <button
-          onClick={() => navigationHandler(sini_majlesiRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
-        >
-          سینی مجلسی
-        </button>
-
-
-        <button
-          onClick={() => navigationHandler(day_foodRef)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
-        >
-          غذای روز
-        </button>
-
-
-
-        <button
-          onClick={() => navigationHandler(cofee)}
-          className="font-light hover:text-[#FACE8D] text-white px-4 py-2"
+          onClick={() => navigationHandler(cofeeRef)}
+          className="font-light text-[#FACE8D] px-4 py-2"
         >
           کافه
         </button>
-
 
       </div>
     </div>
