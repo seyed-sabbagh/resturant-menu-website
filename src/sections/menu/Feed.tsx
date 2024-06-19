@@ -1,5 +1,5 @@
 import React, { FC, MutableRefObject } from "react";
-import menuData from "/root/menu-manager-2/src/data/menuData";
+import menuData from "/Users/fapna/restaurant-manager/menu-manager 2/src/data/menuData.ts";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 
@@ -100,12 +100,11 @@ const Feed: FC<IProps> = ({
             }}
             key={item.id}
             className="item mt-[12px] cursor-pointer hover:scale-95 duration-150"
-
           >
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -141,7 +140,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -178,7 +177,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -209,7 +208,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -240,7 +239,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -271,7 +270,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -302,7 +301,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -333,7 +332,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -368,7 +367,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -404,7 +403,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -440,7 +439,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -476,7 +475,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -512,7 +511,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -548,7 +547,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -583,7 +582,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -619,7 +618,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -656,7 +655,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -693,7 +692,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -730,7 +729,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -766,7 +765,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -803,7 +802,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -840,7 +839,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -876,7 +875,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -912,7 +911,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -948,7 +947,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
@@ -984,7 +983,7 @@ const Feed: FC<IProps> = ({
             <Image
               width={90}
               height={72}
-              src={item.pictureUrl}
+              src={require("/Users/fapna/restaurant-manager/menu-manager 2/src/assets/sarv_logo.png").default}
               alt={item.name}
               className="rounded-[10px]"
             />
