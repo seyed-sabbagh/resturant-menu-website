@@ -88,10 +88,10 @@ const Feed: FC<IProps> = ({
   return (
     
 
-    <div className="mt-[0px] max-w-[628px] w-full overflow-hidden overflow-y-scroll farsi-font"> {/* Apply farsi-font class */}
+    <div className="mt-[0px] max-w-[628px] w-full overflow-hidden overflow-y-scroll farsi-font" > {/* Apply farsi-font class */}
       <div ref={pizza} className="w-full px-[10px] mt-[26px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="pizza">
-        pizza
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="pizza">
+        پیتزا
         </h1>
         <div className="item-container">
         {menuData.pizza.map((item) => (
@@ -126,8 +126,8 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={fried} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="fried">
-        fried
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="fried">
+        سوخاری
         </h1>
         <div className="item-container">
         {menuData.fried.map((item) => (
@@ -163,8 +163,8 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={hot_dog} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="hot_dog">
-        hot dog
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="hot_dog">
+        هات داگ
         </h1>
         <div className="item-container">
         {menuData.hot_dog.map((item) => (
@@ -200,8 +200,8 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={feed} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="feed">
-        feed
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="feed">
+        خوراک
         </h1>
         <div className="item-container">
         {menuData.feed.map((item) => (
@@ -231,8 +231,8 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={burgers} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="burgers">
-        burgers
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="burgers">
+        برگر
         </h1>
         <div className="item-container">
         {menuData.burgers.map((item) => (
@@ -262,8 +262,8 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={sandwiches} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sandwiches">
-        sandwiches
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="sandwiches">
+        ساندویچ
         </h1>
         <div className="item-container">
         {menuData.sandwiches.map((item) => (
@@ -293,8 +293,8 @@ const Feed: FC<IProps> = ({
       </div>
   
       <div ref={snacks} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="snacks">
-        snacks
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="snacks">
+        اسنک
         </h1>
         <div className="item-container">
         {menuData.snacks.map((item) => (
@@ -324,8 +324,8 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={salad} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="salad">
-        salad
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="salad">
+        سالاد
         </h1>
         <div className="item-container">
         {menuData.salad.map((item) => (
@@ -355,8 +355,8 @@ const Feed: FC<IProps> = ({
       </div>
   
       <div ref={persian_food} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="persian_food">
-        persian_food
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="persian_food">
+        غذای ایرانی
         </h1>
 
         <div className="item-container">
@@ -391,7 +391,7 @@ const Feed: FC<IProps> = ({
 
 
       <div ref={pish_ghaza} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="pish_ghaza">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="pish_ghaza">
         پیش غذا
         </h1>
 
@@ -427,7 +427,7 @@ const Feed: FC<IProps> = ({
   
 
       <div ref={seafood} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="seafood">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="seafood">
         غذای دریایی
         </h1>
 
@@ -463,7 +463,7 @@ const Feed: FC<IProps> = ({
   
 
       <div ref={Customـfood} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="Customـfood">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="Customـfood">
         غذا های سفارشی
         </h1>
 
@@ -499,7 +499,7 @@ const Feed: FC<IProps> = ({
   
 
       <div ref={Lunchـdinner} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="Lunchـdinner">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="Lunchـdinner">
         غذای ظهر و شب
         </h1>
 
@@ -535,7 +535,7 @@ const Feed: FC<IProps> = ({
   
 
       <div ref={sini_majlesi} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="sini_majlesi">
         سینی مجلسی
         </h1>
 
@@ -570,7 +570,7 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={day_food} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="sini_majlesi">
         غذای روز
         </h1>
 
@@ -606,7 +606,7 @@ const Feed: FC<IProps> = ({
 
 
       <div ref={cofee} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="cofee">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="cofee">
         قهوه
         </h1>
 
@@ -643,7 +643,7 @@ const Feed: FC<IProps> = ({
 
 
       <div ref={icecream} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="sini_majlesi">
         بستنی
         </h1>
 
@@ -680,7 +680,7 @@ const Feed: FC<IProps> = ({
 
 
       <div ref={koktel} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="sini_majlesi">
         ککتل
         </h1>
 
@@ -717,7 +717,7 @@ const Feed: FC<IProps> = ({
 
 
       <div ref={damnosh} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="sini_majlesi">
         دمنوش
         </h1>
 
@@ -753,7 +753,7 @@ const Feed: FC<IProps> = ({
   
 
       <div ref={shake} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="sini_majlesi">
         شیک
         </h1>
 
@@ -790,7 +790,7 @@ const Feed: FC<IProps> = ({
 
 
       <div ref={smothi} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="sini_majlesi">
         اسموتی
         </h1>
 
@@ -827,7 +827,7 @@ const Feed: FC<IProps> = ({
   
 
       <div ref={majon} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="sini_majlesi">
         معجون
         </h1>
 
@@ -863,7 +863,7 @@ const Feed: FC<IProps> = ({
 
 
       <div ref={cold_bar} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="sini_majlesi">
         بار سرد
         </h1>
 
@@ -899,7 +899,7 @@ const Feed: FC<IProps> = ({
 
 
       <div ref={glasse} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="sini_majlesi">
         گلاسه
         </h1>
 
@@ -935,7 +935,7 @@ const Feed: FC<IProps> = ({
 
 
       <div ref={hot_bar} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="sini_majlesi">
         بار گرم
         </h1>
 
@@ -971,7 +971,7 @@ const Feed: FC<IProps> = ({
 
 
       <div ref={cake} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" id="sini_majlesi">
+        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]" style={{ direction: 'rtl', fontFamily: 'B Vazir, Tahoma, Arial, sans-serif' }} id="sini_majlesi">
         کیک
         </h1>
 
